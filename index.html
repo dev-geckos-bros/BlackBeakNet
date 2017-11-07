@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home | BlackBeakNet</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="BlackBeakNet is a platform and home for DevGeckos Developers in Website and Mobile &amp; Desktop Applications">
+    <meta name="keywords" content="Black Beak Net,BlackBeak,BlackBeakNet,Black,Beak,web,Developer,DevGeckos">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/blackbeaknet.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+<body>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <div class=container>
+    <div class="top">
+      <header>
+        <a href=# id="blackbeaknetHome">BlackBeakNet</a>
+      </header>
+      <script>let intSizeX = window.innerWidth; var strUrlHome = document.getElementById('blackbeaknetHome'); if ( intSizeX <= 768 )  { addSpan() } else { removeSpan() } window.onresize = resize; function addSpan() { var span = document.createElement("span");strUrlHome.innerHTML = ""; span.classList.add('glyphicon','glyphicon-home'); strUrlHome.appendChild(span); } function removeSpan() { strUrlHome.innerHTML = "BlackBeakNet" } function resize() { if ( this.innerWidth <= 768 ) { addSpan() } else { removeSpan() } } </script>
+    </div>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="navbar-header">
+        <button id="menu-btn" type="button" class="navbar-toggle" data-blackbeaknet-toggle="show" data-blackbeaknet-target=".blackbeaknet-mobilemenu" style="border: 0">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="blackbeaknet-mobilemenu blackbeaknet-inline">
+        <ul>
+          <li><a href="">About Us</a></li>
+          <div class="divider"></div>
+          <li><a href="">Our Services</a></li>
+          <div class="divider"></div>
+          <li><a href="">Contact Us</a></li>
+          <div class="divider"></div>
+        </ul>
+      </div>
+      <script> var button = document.getElementById('menu-btn');var target = button.dataset.blackbeaknetTarget;var action = button.dataset.blackbeaknetToggle;let menu = $(target);button.addEventListener("click", function(event){event.preventDefault();if ( action == "show" ) {displayMenu();} else { retractMenu();} function displayMenu() {menu.css("left","0"); action = "hide"; } function retractMenu() {menu.css("left","-100%"); action = "show"; } })</script>
+    </nav>
+    <div class="parallax-2"></div>
+    <div class=row>
+       <div class="blackbeaknet-box col-xs-4 col-md-4 col-lg-4">
+          <h4>Who we are?</h4>
+          <p><span class="blackbeaknet-minlogo"></span>BlackBeakNet is a platform and home for DevGeckos Developers in Website and Mobile &amp; Desktop Applications</p>
+       </div>
+       <div class="blackbeaknet-box col-xs-4 col-md-4 col-md-4">
+         <h4>What we do?</h4>
+         <p><span class="blackbeaknet-minlogo">We design and develop responsive website and web applications optimised for slow and congested networks. <br />We build both mobile and desktop applications using popular innovative technology. <br />We also provide technical support for IT based situation like Software installation, System maintenance, Backing up data and Network System Troubleshooting</p>
+       </div>
+       <div class="blackbeaknet-box cols-x-4 col-md-4 col-md-4">
+         <h4></h4>
+         <p><span class="blackbeaknet-minlogo">blahaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+       </div>
+    </div>
+    <div class="parallax-1"></div>
+    <div class="row">
+      <div class="cols-xs-10 cols-sm-3 cols-md-3 cols-lg-5">
+      <!--p id="countdown"></p-->
+      </div>
+    </div>
+    <div class="parallax-2"></div>
+    <div class="text-center"><small>&copy; Copyright 2017 DevGeckos. Contact us via Mob: +255 713 943 842 | +255 714 291 286. Email <a href="mailto:info@blackbeaknet.com">info@blackbeaknet.com</a></small></div>
+  </div>
+    <!--script>/*Set the date we're counting down to*/ var countDownDate = new Date("Oct 25, 2017 15:37:25").getTime();/* Update the count down every 1 second */var x = setInterval(function() {/* Get todays date and time */var now = new Date().getTime();/* Find the distance between now an the count down date */var distance = countDownDate - now;/* Time calculations for days, hours, minutes and seconds */var days = Math.floor(distance / (1000 * 60 * 60 * 24));var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));var seconds = Math.floor((distance % (1000 * 60)) / 1000);/* Output the result in an element with id="countdown" */document.getElementById("countdown").innerHTML = days + "d " + hours + "h "+ minutes + "m " + seconds + "s ";/* If the count down is over, write some text */if (distance < 0) {clearInterval(x);document.getElementById("countdown").innerHTML = "EXPIRED";}}, 1000); </script-->
+</body>
+</html> 
